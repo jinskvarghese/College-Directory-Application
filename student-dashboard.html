@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>Student Dashboard</h2>
+        <div id="student-profile">
+            <!-- Profile details will be populated here by student.js -->
+        </div>
+        <h3>Search Students</h3>
+        <input type="text" id="student-search" placeholder="Search by name or ID" onkeyup="searchStudents()">
+        <div id="student-search-results">
+            <!-- Search results will be populated here by student.js -->
+        </div>
+
+        <h3>Faculty Advisors</h3>
+        <div id="faculty-advisors">
+            <!-- Faculty advisor details will be populated here by student.js -->
+        </div>
+    </div>
+
+    <script src="student.js"></script>
+</body>
+</html>
