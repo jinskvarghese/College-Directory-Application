@@ -43,7 +43,7 @@ public class CourseController {
         if (createdCourse != null) {
             return ResponseEntity.ok(createdCourse);
         }
-        return ResponseEntity.badRequest().build();
+        return ResponseEntity.badRequest().build(); 
     }
 
     @PutMapping("/{id}")
