@@ -20,8 +20,8 @@ public class SecurityConfig {
         http
             .csrf(csrf -> csrf.disable())  // Updated to use the Lambda DSL syntax for disabling CSRF
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/api/auth/login").permitAll()  // Use requestMatchers for endpoint security
-                .anyRequest().authenticated()
+                // .requestMatchers("/api/auth/login").permitAll()  // Use requestMatchers for endpoint security
+                .anyRequest().permitAll()
             )
             .addFilterBefore(jwtRequestFilter(), UsernamePasswordAuthenticationFilter.class);
         
