@@ -13,7 +13,7 @@ import com.directory.backend.entity.AuthRequest;
 import com.directory.backend.entity.AuthResponse;
 import com.directory.backend.service.JwtUtil;
 
-@RestController
+@RestController 
 @RequestMapping("/api/auth")
 public class AuthController {
 
